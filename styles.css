@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0 250px;
+    padding: 20px 50px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.home-nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.home-nav ul {
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-nav ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
