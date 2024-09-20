@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <title>Priority Candles</title>
 </head>
 
@@ -26,9 +25,7 @@
   </header>
   <main>
     <section>
-      <h2>
-        This will be the carousel
-      </h2>
+
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -76,22 +73,18 @@
       </div>
     </section>
     <hr>
-    <section>
+    <section class="featuredProducts-container">
       <h2>Featured Products</h2>
-      <div>
-        <img src="https://picsum.photos/200" alt="#">
-        <img src="https://picsum.photos/200" alt="#">
-        <img src="https://picsum.photos/200" alt="#">
-        <img src="https://picsum.photos/200" alt="#">
+      <div id="featuredProducts-container" class="products-container">
       </div>
-      <div>
+      <div class="view-all-container">
         <button onclick="console.log('Viewing All Products')">View All</button>
       </div>
     </section>
     <hr>
     <section>
       <h2>Collections</h2>
-      <div>
+      <div id="collections-container">
         <img src="https://picsum.photos/200" alt="#">
         <img src="https://picsum.photos/200" alt="#">
         <img src="https://picsum.photos/200" alt="#">
@@ -104,9 +97,9 @@
       <input type="email" placeholder="Email">
     </section>
   </main>
-  <footer>
-    <p>&copy; 2024 Priority Candles</p>
+  <footer class="main-footer">
     <nav>
+      <p>&copy; 2024 Priority Candles</p>
       <ul><a href="#">Refund Policy</a></ul>
       <ul><a href="#">Privacy Policy</a></ul>
       <ul><a href="#">Shipping Policy</a></ul>
@@ -115,26 +108,8 @@
     </nav>
   </footer>
 </body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
-</script>
-
 </html>
 </header>
